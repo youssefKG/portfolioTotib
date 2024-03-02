@@ -4,28 +4,42 @@
 body {
   /* background-color: #10002b; */
   margin: 0;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 html {
   scroll-behavior: smooth;
 }
-.active::before{
+.projectImagesContainer {
+  scroll-behavior: smooth;
+  scrollbar-color: #8ecae6 #0b132b;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+  scroll-behavior: smooth;
+  background-color: #0b132b;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8ecae6;
+  border-radius: 20px;
+}
+.active::before {
   content: " ";
   width: 100%;
   height: 2px;
-  background-color:  #9d4edd;
-  position: absolute ;
+  background-color: #9d4edd;
+  position: absolute;
   bottom: -2px;
 }
-.transitionClass{
+.transitionClass {
   transition: 0.5s ease-in-out;
 }
-.projectCard:hover{
-  .upRightFlesh{
+.projectCard:hover {
+  .upRightFlesh {
     margin-bottom: 4px;
     margin-left: 6px;
   }
